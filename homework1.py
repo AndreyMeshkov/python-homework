@@ -1,4 +1,4 @@
 year = 1900
 while year <= 2021:
-    print(year)
+    print(year, end=' ')
     year += 1
