@@ -1,17 +1,36 @@
-num = 25
-count = 1
-is_answer_right = False
-while not is_answer_right:
-    user_num = int(input('What is number?'))
-    if user_num == num:
-        print(f"You won. Number of attempts = {count}")
-        is_answer_right = True
-    elif user_num < num:
-        print(f"Try again. The hidden number is greater than {user_num}")
-        count += 1
-    elif user_num > num:
-        print(f"Try again. The hidden number is less than {user_num}")
-        count += 1
+# num = 25
+# count = 1
+# is_answer_right = False
+# while not is_answer_right:
+#     user_num = int(input('What is number?'))
+#     if user_num == num:
+#         print(f"You won. Number of attempts = {count}")
+#         is_answer_right = True
+#     elif user_num < num:
+#         print(f"Try again. The hidden number is greater than {user_num}")
+#         count += 1
+#     elif user_num > num:
+#         print(f"Try again. The hidden number is less than {user_num}")
+#         count += 1
+
+
+def guess_number(num):
+    count = 1
+    is_answer_right = False
+    while not is_answer_right:
+        user_num = int(input('What is number?'))
+        if user_num == num:
+            print(f"You won. Number of attempts = {count}")
+            is_answer_right = True
+        elif user_num < num:
+            print(f"Try again. The hidden number is greater than {user_num}")
+            count += 1
+        elif user_num > num:
+            print(f"Try again. The hidden number is less than {user_num}")
+            count += 1
+
+
+guess_number(33)
 
 # coach's solution
 # x = 75
